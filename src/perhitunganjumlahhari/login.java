@@ -113,6 +113,21 @@ public class login extends javax.swing.JFrame {
 
     private void loginbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginbtnActionPerformed
         // TODO add your handling code here:
+        if((userTF.getText().equals("admin")) &&
+            (String.valueOf(passwordTF.getText()).equals("admin"))){
+        new PenentuJumlahHari().setVisible(true);
+        dispose();
+        }else{
+            JOptionPane.showMessageDialog(
+                null,
+                   userTF.getText() +
+                   ", password anda salah",
+                   "Pesan Kesalahan",
+                   JOptionPane.ERROR_MESSAGE);
+            userTF.setText("");
+            passwordTF.setText("");
+            userTF.requestFocus();
+        }
         
     }//GEN-LAST:event_loginbtnActionPerformed
 
