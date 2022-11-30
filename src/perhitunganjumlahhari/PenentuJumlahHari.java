@@ -254,7 +254,14 @@ public class PenentuJumlahHari extends javax.swing.JFrame {
 
     private void simpanBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_simpanBTNActionPerformed
         // TODO add your handling code here:
-        
+        try{
+            BufferedWriter out=new BufferedWriter(new FileWriter("julahhari.txt"));
+            out.write(jumlahharilabel.getText());
+            JOptionPane.showMessageDialog(null, "Berhasil DisimpanS Dalam File");
+            out.close();
+        }catch (HeadlessException | IOException e){
+            System.err.println("Error: "+e.getMessage());
+        }
     }//GEN-LAST:event_simpanBTNActionPerformed
 
     private void KeluarBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_KeluarBTNActionPerformed
