@@ -266,7 +266,7 @@ public class PenentuJumlahHari extends javax.swing.JFrame {
 
     private void KeluarBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_KeluarBTNActionPerformed
         // TODO add your handling code here:
-        
+        System.exit(0);
     }//GEN-LAST:event_KeluarBTNActionPerformed
 
     private void bulanComboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bulanComboBoxActionPerformed
